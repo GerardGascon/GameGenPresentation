@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://ba0xsnum4uwp2"]
+
+[ext_resource type="Script" path="res://Slides.gd" id="1_twp8b"]
+[ext_resource type="PackedScene" uid="uid://edbgev6imyv5" path="res://slides/title.tscn" id="2_cmdxc"]
+
+[node name="Main" type="Node"]
+
+[node name="Slides" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 960.0
+offset_bottom = 540.0
+script = ExtResource("1_twp8b")
+
+[node name="Title" parent="Slides" instance=ExtResource("2_cmdxc")]
+layout_mode = 1
