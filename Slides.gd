@@ -12,6 +12,8 @@ func _ready():
 		remove_child(slide)
 	
 	enable_slide(slide_nodes[0])
+	
+	Input.mouse_mode = Input.MOUSE_MODE_HIDDEN
 
 
 func _unhandled_input(event: InputEvent):
