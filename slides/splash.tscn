@@ -1,0 +1,74 @@
+[gd_scene load_steps=6 format=3 uid="uid://cesv26jximro0"]
+
+[ext_resource type="FontFile" uid="uid://cq5nu007qrube" path="res://fonts/PixeloidSans-Bold.ttf" id="2_32wpu"]
+[ext_resource type="Texture2D" uid="uid://cguemp86u1s0v" path="res://resources/godot_logo.png" id="2_v814v"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_x5ngj"]
+atlas = ExtResource("2_v814v")
+region = Rect2(0, 0, 189, 174)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_l2kki"]
+atlas = ExtResource("2_v814v")
+region = Rect2(189, 0, 189, 174)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_rm6en"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_x5ngj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_l2kki")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Splash" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -960.0
+offset_bottom = -540.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 960.0
+offset_bottom = 540.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.964706, 0.858824, 0.729412, 1)
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 317.0
+offset_right = 960.0
+offset_bottom = 388.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/default_color = Color(0.329412, 0.388235, 0.85098, 1)
+theme_override_fonts/normal_font = ExtResource("2_32wpu")
+theme_override_font_sizes/normal_font_size = 18
+bbcode_enabled = true
+text = "[center]Esta presentación ha sido
+hecha con Godot Engine :)"
+scroll_active = false
+autowrap_mode = 0
+shortcut_keys_enabled = false
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(480, 220)
+sprite_frames = SubResource("SpriteFrames_rm6en")
+autoplay = "default"
+frame = 1
+frame_progress = 0.957505
