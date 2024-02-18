@@ -1,9 +1,16 @@
-[gd_scene load_steps=5 format=3 uid="uid://ba0xsnum4uwp2"]
+[gd_scene load_steps=12 format=3 uid="uid://ba0xsnum4uwp2"]
 
 [ext_resource type="Script" path="res://Slides.gd" id="1_twp8b"]
 [ext_resource type="PackedScene" uid="uid://edbgev6imyv5" path="res://slides/title.tscn" id="2_cmdxc"]
 [ext_resource type="PackedScene" uid="uid://cesv26jximro0" path="res://slides/splash.tscn" id="2_dm0va"]
-[ext_resource type="PackedScene" uid="uid://detqh52qaweu2" path="res://slides/slide1.tscn" id="4_vm0in"]
+[ext_resource type="PackedScene" uid="uid://gkjwdvr0l1ey" path="res://slides/slide1.tscn" id="4_vm0in"]
+[ext_resource type="PackedScene" uid="uid://detqh52qaweu2" path="res://slides/slide2.tscn" id="5_t676r"]
+[ext_resource type="PackedScene" uid="uid://dvyyrwimegriy" path="res://slides/slide3.tscn" id="6_hv5td"]
+[ext_resource type="PackedScene" uid="uid://388nva687sl3" path="res://slides/slide4.tscn" id="7_xch4t"]
+[ext_resource type="PackedScene" uid="uid://brjmy5v2kqtrd" path="res://slides/slide5.tscn" id="8_uw5wc"]
+[ext_resource type="PackedScene" uid="uid://djrdg3n1m4c14" path="res://slides/slide6.tscn" id="9_uhs3j"]
+[ext_resource type="PackedScene" uid="uid://gt7jq02f56b6" path="res://slides/slide7.tscn" id="10_okpwv"]
+[ext_resource type="PackedScene" uid="uid://c4vioc2ter4jt" path="res://slides/slide8.tscn" id="11_q8w33"]
 
 [node name="Main" type="Node"]
 
@@ -21,4 +28,25 @@ layout_mode = 1
 layout_mode = 1
 
 [node name="Slide1" parent="Slides" instance=ExtResource("4_vm0in")]
+layout_mode = 1
+
+[node name="Slide2" parent="Slides" instance=ExtResource("5_t676r")]
+layout_mode = 1
+
+[node name="Slide3" parent="Slides" instance=ExtResource("6_hv5td")]
+layout_mode = 1
+
+[node name="Slide4" parent="Slides" instance=ExtResource("7_xch4t")]
+layout_mode = 1
+
+[node name="Slide5" parent="Slides" instance=ExtResource("8_uw5wc")]
+layout_mode = 1
+
+[node name="Slide6" parent="Slides" instance=ExtResource("9_uhs3j")]
+layout_mode = 1
+
+[node name="Slide7" parent="Slides" instance=ExtResource("10_okpwv")]
+layout_mode = 1
+
+[node name="Slide8" parent="Slides" instance=ExtResource("11_q8w33")]
 layout_mode = 1

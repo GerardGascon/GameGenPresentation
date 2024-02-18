@@ -1,0 +1,44 @@
+[gd_scene load_steps=2 format=3 uid="uid://c4vioc2ter4jt"]
+
+[ext_resource type="FontFile" uid="uid://cq5nu007qrube" path="res://fonts/PixeloidSans-Bold.ttf" id="1_f8ofu"]
+
+[node name="Slide8" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -960.0
+offset_bottom = -540.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+layout_mode = 1
+offset_right = 960.0
+offset_bottom = 46.0
+theme_override_fonts/normal_font = ExtResource("1_f8ofu")
+theme_override_font_sizes/normal_font_size = 36
+bbcode_enabled = true
+text = "Geri"
+scroll_active = false
+autowrap_mode = 0
+shortcut_keys_enabled = false
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="."]
+layout_mode = 1
+offset_top = 55.0
+offset_right = 960.0
+offset_bottom = 139.0
+theme_override_fonts/normal_font = ExtResource("1_f8ofu")
+theme_override_font_sizes/normal_font_size = 27
+bbcode_enabled = true
+text = "Actualmente estoy en el desarrollo de un
+juego post-jam"
+scroll_active = false
+autowrap_mode = 0
+shortcut_keys_enabled = false

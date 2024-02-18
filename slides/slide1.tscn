@@ -1,6 +1,6 @@
-[gd_scene load_steps=2 format=3 uid="uid://detqh52qaweu2"]
+[gd_scene load_steps=2 format=3 uid="uid://gkjwdvr0l1ey"]
 
-[ext_resource type="FontFile" uid="uid://cq5nu007qrube" path="res://fonts/PixeloidSans-Bold.ttf" id="2_66if4"]
+[ext_resource type="FontFile" uid="uid://cq5nu007qrube" path="res://fonts/PixeloidSans-Bold.ttf" id="1_w71up"]
 
 [node name="Slide1" type="Control"]
 layout_mode = 3
@@ -21,7 +21,7 @@ offset_bottom = 40.0
 layout_mode = 1
 offset_right = 960.0
 offset_bottom = 296.0
-theme_override_fonts/normal_font = ExtResource("2_66if4")
+theme_override_fonts/normal_font = ExtResource("1_w71up")
 theme_override_font_sizes/normal_font_size = 36
 bbcode_enabled = true
 text = "[center]Indie Spain Jam - Figments of the Night"
