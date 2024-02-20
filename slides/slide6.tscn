@@ -1,6 +1,29 @@
-[gd_scene load_steps=2 format=3 uid="uid://djrdg3n1m4c14"]
+[gd_scene load_steps=6 format=3 uid="uid://djrdg3n1m4c14"]
 
-[ext_resource type="FontFile" uid="uid://cq5nu007qrube" path="res://fonts/PixeloidSans-Bold.ttf" id="1_5jdi0"]
+[ext_resource type="Texture2D" uid="uid://c7e67p0q5sqwt" path="res://resources/backgrounds/Marc2.png" id="1_d8kb8"]
+[ext_resource type="Texture2D" uid="uid://bc5r458fpxr35" path="res://resources/buddies-Sheet.png" id="2_cgj7a"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v3erj"]
+atlas = ExtResource("2_cgj7a")
+region = Rect2(0, 0, 480, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xct5g"]
+atlas = ExtResource("2_cgj7a")
+region = Rect2(480, 0, 480, 256)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_38ffd"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v3erj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xct5g")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]
 
 [node name="Slide6" type="Control"]
 layout_mode = 3
@@ -14,31 +37,14 @@ grow_vertical = 2
 
 [node name="TextureRect" type="TextureRect" parent="."]
 layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
-
-[node name="RichTextLabel" type="RichTextLabel" parent="."]
-layout_mode = 1
 offset_right = 960.0
-offset_bottom = 46.0
-theme_override_fonts/normal_font = ExtResource("1_5jdi0")
-theme_override_font_sizes/normal_font_size = 36
-bbcode_enabled = true
-text = "Marc"
-scroll_active = false
-autowrap_mode = 0
-shortcut_keys_enabled = false
+offset_bottom = 540.0
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_d8kb8")
 
-[node name="RichTextLabel2" type="RichTextLabel" parent="."]
-layout_mode = 1
-offset_top = 55.0
-offset_right = 960.0
-offset_bottom = 139.0
-theme_override_fonts/normal_font = ExtResource("1_5jdi0")
-theme_override_font_sizes/normal_font_size = 27
-bbcode_enabled = true
-text = "Publico dibujos de tanto en tanto, pero siempre 
-estoy trabajando en nuevos proyectitos."
-scroll_active = false
-autowrap_mode = 0
-shortcut_keys_enabled = false
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(494, 284)
+scale = Vector2(2, 2)
+sprite_frames = SubResource("SpriteFrames_38ffd")
+autoplay = "default"
+frame_progress = 0.915411

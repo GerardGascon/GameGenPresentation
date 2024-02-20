@@ -1,4 +1,6 @@
-[gd_scene format=3 uid="uid://dvyyrwimegriy"]
+[gd_scene load_steps=2 format=3 uid="uid://dvyyrwimegriy"]
+
+[ext_resource type="Texture2D" uid="uid://b8rd0dd085axc" path="res://resources/backgrounds/Uri2.png" id="1_xor0i"]
 
 [node name="Slide3" type="Control"]
 layout_mode = 3
@@ -14,3 +16,5 @@ grow_vertical = 2
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 40.0
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_xor0i")

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ipg3mbqg7dwe"
-path="res://.godot/imported/Geri2.png-ceeb7064d19582afc0a3284ff5b6c52b.ctex"
+uid="uid://rvx3wopuc2tl"
+path="res://.godot/imported/marc-Sheet.png-4249d6b1fffbd08b25e287191bebcffb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://resources/backgrounds/Geri2.png"
-dest_files=["res://.godot/imported/Geri2.png-ceeb7064d19582afc0a3284ff5b6c52b.ctex"]
+source_file="res://resources/marc-Sheet.png"
+dest_files=["res://.godot/imported/marc-Sheet.png-4249d6b1fffbd08b25e287191bebcffb.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dyp7l8racdmyp"
-path="res://.godot/imported/crime-Sheet.png-1be7dfe4bd1e626b7f20c5c9aae82c85.ctex"
+uid="uid://n8dcsngqf7vi"
+path="res://.godot/imported/furfles.png-7a2264cc44e49b5918ba1ce1bc51717c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://resources/crime-Sheet.png"
-dest_files=["res://.godot/imported/crime-Sheet.png-1be7dfe4bd1e626b7f20c5c9aae82c85.ctex"]
+source_file="res://resources/furfles.png"
+dest_files=["res://.godot/imported/furfles.png-7a2264cc44e49b5918ba1ce1bc51717c.ctex"]
 
 [params]
 

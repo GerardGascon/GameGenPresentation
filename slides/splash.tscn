@@ -22,7 +22,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"default",
-"speed": 5.0
+"speed": 10.0
 }]
 
 [node name="Splash" type="Control"]
@@ -70,5 +70,4 @@ shortcut_keys_enabled = false
 position = Vector2(480, 220)
 sprite_frames = SubResource("SpriteFrames_rm6en")
 autoplay = "default"
-frame = 1
-frame_progress = 0.957505
+frame_progress = 0.944148

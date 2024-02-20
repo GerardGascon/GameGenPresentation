@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://388nva687sl3"]
 
-[ext_resource type="FontFile" uid="uid://cq5nu007qrube" path="res://fonts/PixeloidSans-Bold.ttf" id="1_jrgob"]
+[ext_resource type="Texture2D" uid="uid://d06nx5wil3ku7" path="res://resources/backgrounds/Uri3.png" id="1_86all"]
 
 [node name="Slide4" type="Control"]
 layout_mode = 3
@@ -16,30 +16,5 @@ grow_vertical = 2
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 40.0
-
-[node name="RichTextLabel2" type="RichTextLabel" parent="."]
-layout_mode = 1
-offset_top = 55.0
-offset_right = 960.0
-offset_bottom = 139.0
-theme_override_fonts/normal_font = ExtResource("1_jrgob")
-theme_override_font_sizes/normal_font_size = 27
-bbcode_enabled = true
-text = "Actualmente sigo creando environments cuando la
-universidad me lo permite."
-scroll_active = false
-autowrap_mode = 0
-shortcut_keys_enabled = false
-
-[node name="RichTextLabel3" type="RichTextLabel" parent="."]
-layout_mode = 1
-offset_top = 125.0
-offset_right = 960.0
-offset_bottom = 209.0
-theme_override_fonts/normal_font = ExtResource("1_jrgob")
-theme_override_font_sizes/normal_font_size = 9
-bbcode_enabled = true
-text = "(socorro)"
-scroll_active = false
-autowrap_mode = 0
-shortcut_keys_enabled = false
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_86all")

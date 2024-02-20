@@ -1,6 +1,29 @@
-[gd_scene load_steps=2 format=3 uid="uid://brjmy5v2kqtrd"]
+[gd_scene load_steps=6 format=3 uid="uid://brjmy5v2kqtrd"]
 
-[ext_resource type="FontFile" uid="uid://cq5nu007qrube" path="res://fonts/PixeloidSans-Bold.ttf" id="1_0h3ic"]
+[ext_resource type="Texture2D" uid="uid://bjjga75576yw7" path="res://resources/backgrounds/Marc1.png" id="1_a0sna"]
+[ext_resource type="Texture2D" uid="uid://rvx3wopuc2tl" path="res://resources/marc-Sheet.png" id="2_lanbf"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ogn5q"]
+atlas = ExtResource("2_lanbf")
+region = Rect2(0, 0, 189, 174)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ktm6o"]
+atlas = ExtResource("2_lanbf")
+region = Rect2(189, 0, 189, 174)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_smsy7"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ogn5q")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ktm6o")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]
 
 [node name="Slide5" type="Control"]
 layout_mode = 3
@@ -16,29 +39,13 @@ grow_vertical = 2
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 40.0
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_a0sna")
 
-[node name="RichTextLabel" type="RichTextLabel" parent="."]
-layout_mode = 1
-offset_right = 960.0
-offset_bottom = 46.0
-theme_override_fonts/normal_font = ExtResource("1_0h3ic")
-theme_override_font_sizes/normal_font_size = 36
-bbcode_enabled = true
-text = "Marc"
-scroll_active = false
-autowrap_mode = 0
-shortcut_keys_enabled = false
-
-[node name="RichTextLabel2" type="RichTextLabel" parent="."]
-layout_mode = 1
-offset_top = 55.0
-offset_right = 960.0
-offset_bottom = 139.0
-theme_override_fonts/normal_font = ExtResource("1_0h3ic")
-theme_override_font_sizes/normal_font_size = 27
-bbcode_enabled = true
-text = "Soy un monstruo que le gusta dibujar
-Soy el que se dedica a mirar out of scope"
-scroll_active = false
-autowrap_mode = 0
-shortcut_keys_enabled = false
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(700, 226)
+scale = Vector2(-2, 2)
+sprite_frames = SubResource("SpriteFrames_smsy7")
+autoplay = "default"
+frame = 1
+frame_progress = 0.725063

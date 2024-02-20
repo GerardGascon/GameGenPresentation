@@ -1,6 +1,29 @@
-[gd_scene load_steps=2 format=3 uid="uid://detqh52qaweu2"]
+[gd_scene load_steps=6 format=3 uid="uid://detqh52qaweu2"]
 
-[ext_resource type="FontFile" uid="uid://cq5nu007qrube" path="res://fonts/PixeloidSans-Bold.ttf" id="2_66if4"]
+[ext_resource type="Texture2D" uid="uid://blv3chrmob2p8" path="res://resources/backgrounds/Uri1.png" id="1_ybxu2"]
+[ext_resource type="Texture2D" uid="uid://ceq2o1od8x5w4" path="res://resources/uri-Sheet.png" id="2_nj8oj"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kidc6"]
+atlas = ExtResource("2_nj8oj")
+region = Rect2(0, 0, 189, 174)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ypy5n"]
+atlas = ExtResource("2_nj8oj")
+region = Rect2(189, 0, 189, 174)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_wk5s2"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kidc6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ypy5n")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]
 
 [node name="Slide2" type="Control"]
 layout_mode = 3
@@ -16,42 +39,11 @@ grow_vertical = 2
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 40.0
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_ybxu2")
 
-[node name="RichTextLabel" type="RichTextLabel" parent="."]
-layout_mode = 1
-offset_right = 960.0
-offset_bottom = 46.0
-theme_override_fonts/normal_font = ExtResource("2_66if4")
-theme_override_font_sizes/normal_font_size = 36
-bbcode_enabled = true
-text = "Uri"
-scroll_active = false
-autowrap_mode = 0
-shortcut_keys_enabled = false
-
-[node name="RichTextLabel2" type="RichTextLabel" parent="."]
-layout_mode = 1
-offset_top = 55.0
-offset_right = 960.0
-offset_bottom = 139.0
-theme_override_fonts/normal_font = ExtResource("2_66if4")
-theme_override_font_sizes/normal_font_size = 27
-bbcode_enabled = true
-text = "Intento de Environment Artist/Level Designer
-Me gusta modelar escenarios y objetos 3D"
-scroll_active = false
-autowrap_mode = 0
-shortcut_keys_enabled = false
-
-[node name="RichTextLabel3" type="RichTextLabel" parent="."]
-layout_mode = 1
-offset_top = 125.0
-offset_right = 960.0
-offset_bottom = 209.0
-theme_override_fonts/normal_font = ExtResource("2_66if4")
-theme_override_font_sizes/normal_font_size = 18
-bbcode_enabled = true
-text = "Que alguien me contrate aiuda (Me estoy quedando sin robux)"
-scroll_active = false
-autowrap_mode = 0
-shortcut_keys_enabled = false
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(786, 222)
+scale = Vector2(2, 2)
+sprite_frames = SubResource("SpriteFrames_wk5s2")
+autoplay = "default"

@@ -1,6 +1,29 @@
-[gd_scene load_steps=2 format=3 uid="uid://gt7jq02f56b6"]
+[gd_scene load_steps=6 format=3 uid="uid://gt7jq02f56b6"]
 
-[ext_resource type="FontFile" uid="uid://cq5nu007qrube" path="res://fonts/PixeloidSans-Bold.ttf" id="1_s4kod"]
+[ext_resource type="Texture2D" uid="uid://vdvwcecf0lvx" path="res://resources/backgrounds/Geri1.png" id="1_yaroe"]
+[ext_resource type="Texture2D" uid="uid://b7t5cbclspou" path="res://resources/geri-Sheet.png" id="2_sq6iv"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_loiog"]
+atlas = ExtResource("2_sq6iv")
+region = Rect2(0, 0, 189, 174)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_maxur"]
+atlas = ExtResource("2_sq6iv")
+region = Rect2(189, 0, 189, 174)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_v4vmk"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_loiog")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_maxur")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]
 
 [node name="Slide7" type="Control"]
 layout_mode = 3
@@ -16,29 +39,11 @@ grow_vertical = 2
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 40.0
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_yaroe")
 
-[node name="RichTextLabel" type="RichTextLabel" parent="."]
-layout_mode = 1
-offset_right = 960.0
-offset_bottom = 46.0
-theme_override_fonts/normal_font = ExtResource("1_s4kod")
-theme_override_font_sizes/normal_font_size = 36
-bbcode_enabled = true
-text = "Geri"
-scroll_active = false
-autowrap_mode = 0
-shortcut_keys_enabled = false
-
-[node name="RichTextLabel2" type="RichTextLabel" parent="."]
-layout_mode = 1
-offset_top = 55.0
-offset_right = 960.0
-offset_bottom = 139.0
-theme_override_fonts/normal_font = ExtResource("1_s4kod")
-theme_override_font_sizes/normal_font_size = 27
-bbcode_enabled = true
-text = "Soy un chaval al que le gusta programar
-He participado a 28 jams y sobrevivido a 18"
-scroll_active = false
-autowrap_mode = 0
-shortcut_keys_enabled = false
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(808, 143)
+scale = Vector2(2, 2)
+sprite_frames = SubResource("SpriteFrames_v4vmk")
+autoplay = "default"

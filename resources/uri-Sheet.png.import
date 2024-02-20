@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ipg3mbqg7dwe"
-path="res://.godot/imported/Geri2.png-ceeb7064d19582afc0a3284ff5b6c52b.ctex"
+uid="uid://ceq2o1od8x5w4"
+path="res://.godot/imported/uri-Sheet.png-1c5e84c59bc86f81e96b8a5be8ece7a2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://resources/backgrounds/Geri2.png"
-dest_files=["res://.godot/imported/Geri2.png-ceeb7064d19582afc0a3284ff5b6c52b.ctex"]
+source_file="res://resources/uri-Sheet.png"
+dest_files=["res://.godot/imported/uri-Sheet.png-1c5e84c59bc86f81e96b8a5be8ece7a2.ctex"]
 
 [params]
 
