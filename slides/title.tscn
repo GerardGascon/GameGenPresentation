@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://edbgev6imyv5"]
 
-[ext_resource type="Texture2D" uid="uid://cmbaq2skvrvuj" path="res://resources/portadas1.png" id="1_vc5rf"]
-[ext_resource type="FontFile" uid="uid://cq5nu007qrube" path="res://fonts/PixeloidSans-Bold.ttf" id="2_qy7fr"]
+[ext_resource type="Texture2D" uid="uid://me8n3ntvgr2s" path="res://resources/portadas1.png" id="1_vc5rf"]
+[ext_resource type="Texture2D" uid="uid://lw7bqa0i566u" path="res://resources/backgrounds/Title.png" id="2_bi3n8"]
 
 [node name="Title" type="Control"]
 layout_mode = 3
@@ -19,21 +19,9 @@ offset_right = 40.0
 offset_bottom = 40.0
 texture = ExtResource("1_vc5rf")
 
-[node name="RichTextLabel" type="RichTextLabel" parent="."]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_top = 92.0
-offset_right = 960.0
-offset_bottom = 388.0
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_fonts/normal_font = ExtResource("2_qy7fr")
-theme_override_font_sizes/normal_font_size = 54
-bbcode_enabled = true
-text = "[center]Hemos sobrevivido
-una jam"
-scroll_active = false
-autowrap_mode = 0
-shortcut_keys_enabled = false
+[node name="TextureRect2" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_bi3n8")
