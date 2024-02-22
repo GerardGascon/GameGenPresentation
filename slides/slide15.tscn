@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=3 uid="uid://dbye2o0qo0vmm"]
 
-[ext_resource type="Texture2D" uid="uid://cjey50qo7mkis" path="res://resources/slide15.png" id="1_4muv2"]
+[ext_resource type="Texture2D" uid="uid://cjey50qo7mkis" path="res://resources/backgrounds/slide15.png" id="1_4muv2"]
 [ext_resource type="Texture2D" uid="uid://c03i2wryqbhdr" path="res://resources/think-Sheet.png" id="2_ssx15"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_iwu2l"]

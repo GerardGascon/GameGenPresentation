@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://bplk0k63nbc33"]
 
-[ext_resource type="Texture2D" uid="uid://vt5icc1ybcnt" path="res://resources/slide22.png" id="1_55wtq"]
+[ext_resource type="Texture2D" uid="uid://vt5icc1ybcnt" path="res://resources/backgrounds/slide22.png" id="1_55wtq"]
 
 [node name="Slide22" type="Control"]
 layout_mode = 3

@@ -1,6 +1,6 @@
 [gd_scene load_steps=9 format=3 uid="uid://cqeksbeu5dwvl"]
 
-[ext_resource type="Texture2D" uid="uid://fy6kli81lmd4" path="res://resources/slide10.png" id="1_6ov73"]
+[ext_resource type="Texture2D" uid="uid://fy6kli81lmd4" path="res://resources/backgrounds/slide10.png" id="1_6ov73"]
 [ext_resource type="Texture2D" uid="uid://cwhs15v18i4b3" path="res://resources/geriwork-Sheet.png" id="2_ui6dr"]
 [ext_resource type="Texture2D" uid="uid://c1p1xr3kiwnin" path="res://resources/foto godot.png" id="3_o4iev"]
 
