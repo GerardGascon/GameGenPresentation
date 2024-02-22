@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dudah7lm4dw1r"
-path="res://.godot/imported/godot meme3-Sheet.png-7e15b03a4502722f5b9e494793d12343.ctex"
+uid="uid://c1ymytx4uon1r"
+path="res://.godot/imported/slide1.png-b0bb8e10deb99230007df05dbed6df51.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://resources/godot meme3-Sheet.png"
-dest_files=["res://.godot/imported/godot meme3-Sheet.png-7e15b03a4502722f5b9e494793d12343.ctex"]
+source_file="res://resources/slide1.png"
+dest_files=["res://.godot/imported/slide1.png-b0bb8e10deb99230007df05dbed6df51.ctex"]
 
 [params]
 

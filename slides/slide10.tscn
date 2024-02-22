@@ -1,0 +1,70 @@
+[gd_scene load_steps=9 format=3 uid="uid://cqeksbeu5dwvl"]
+
+[ext_resource type="Texture2D" uid="uid://fy6kli81lmd4" path="res://resources/slide10.png" id="1_6ov73"]
+[ext_resource type="Texture2D" uid="uid://cwhs15v18i4b3" path="res://resources/geriwork-Sheet.png" id="2_ui6dr"]
+[ext_resource type="Texture2D" uid="uid://c1p1xr3kiwnin" path="res://resources/foto godot.png" id="3_o4iev"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ur5eq"]
+atlas = ExtResource("2_ui6dr")
+region = Rect2(378, 0, 189, 174)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_aspjr"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ur5eq")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wvswx"]
+atlas = ExtResource("3_o4iev")
+region = Rect2(0, 0, 468, 377)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nm4sl"]
+atlas = ExtResource("3_o4iev")
+region = Rect2(468, 0, 468, 377)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_eu47t"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wvswx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nm4sl")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]
+
+[node name="Slide10" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -960.0
+offset_bottom = -540.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_6ov73")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(166, 396)
+sprite_frames = SubResource("SpriteFrames_aspjr")
+autoplay = "default"
+
+[node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="."]
+position = Vector2(745, 364)
+sprite_frames = SubResource("SpriteFrames_eu47t")
+autoplay = "default"
+frame_progress = 0.152018
