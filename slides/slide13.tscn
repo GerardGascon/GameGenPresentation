@@ -7,7 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://c01s8v3jogkk7" path="res://resources/sprites/metter3.png" id="5_3wwt0"]
 [ext_resource type="Texture2D" uid="uid://cndwnd11j1qnq" path="res://resources/sprites/caster-Sheet.png" id="6_1qiud"]
 [ext_resource type="Texture2D" uid="uid://btrpv7odgx42c" path="res://resources/sprites/moonfish.png" id="7_e2xsv"]
-[ext_resource type="FontFile" uid="uid://c0i7ilq3dgy1r" path="res://fonts/ReadexPro-SemiBold.ttf" id="8_oqdq4"]
+[ext_resource type="FontFile" uid="uid://b20sk3gvmhla1" path="res://fonts/ReadexPro-SemiBold.ttf" id="8_oqdq4"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ulhsp"]
 atlas = ExtResource("6_1qiud")
