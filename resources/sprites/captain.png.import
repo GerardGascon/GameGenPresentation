@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dtlyf3ysj2abg"
-path="res://.godot/imported/foto3.png-ab7a3f1c6fb260390046fdfd94f041ec.ctex"
+uid="uid://bq7iyp1ntxfb"
+path="res://.godot/imported/captain.png-39c43a5a371d93abc3624dd39c4d7a6e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://resources/foto3.png"
-dest_files=["res://.godot/imported/foto3.png-ab7a3f1c6fb260390046fdfd94f041ec.ctex"]
+source_file="res://resources/sprites/captain.png"
+dest_files=["res://.godot/imported/captain.png-39c43a5a371d93abc3624dd39c4d7a6e.ctex"]
 
 [params]
 

@@ -1,4 +1,4 @@
-[gd_scene load_steps=43 format=3 uid="uid://ba0xsnum4uwp2"]
+[gd_scene load_steps=47 format=3 uid="uid://ba0xsnum4uwp2"]
 
 [ext_resource type="Script" path="res://Slides.gd" id="1_twp8b"]
 [ext_resource type="PackedScene" uid="uid://edbgev6imyv5" path="res://slides/title.tscn" id="2_cmdxc"]
@@ -17,13 +17,17 @@
 [ext_resource type="PackedScene" uid="uid://dacfh32cf32l4" path="res://slides/slide11.tscn" id="14_dyrtr"]
 [ext_resource type="PackedScene" uid="uid://ibjxlfobxsl5" path="res://slides/slide12.tscn" id="15_ebwqx"]
 [ext_resource type="PackedScene" uid="uid://dbye2o0qo0vmm" path="res://slides/slide15.tscn" id="16_pie66"]
+[ext_resource type="PackedScene" uid="uid://d2u225uyquvvy" path="res://slides/slide13.tscn" id="16_s4sk1"]
+[ext_resource type="PackedScene" uid="uid://6qqkmvepn6qj" path="res://slides/slide14.tscn" id="17_o7v8f"]
 [ext_resource type="PackedScene" uid="uid://juluiya0y78v" path="res://slides/slide17.tscn" id="17_tfrw0"]
 [ext_resource type="PackedScene" uid="uid://bp8cgwes22uwj" path="res://slides/slide18.tscn" id="18_a5wv1"]
+[ext_resource type="PackedScene" uid="uid://bexxh6hf8syxl" path="res://slides/slide16.tscn" id="19_amaxe"]
 [ext_resource type="PackedScene" uid="uid://rlga30yen704" path="res://slides/slide19.tscn" id="19_h5ifc"]
 [ext_resource type="PackedScene" uid="uid://bssr7tb2ovchy" path="res://slides/slide20.tscn" id="20_6vxip"]
 [ext_resource type="PackedScene" uid="uid://bplk0k63nbc33" path="res://slides/slide22.tscn" id="21_yewtl"]
 [ext_resource type="PackedScene" uid="uid://rp3rmym0muwi" path="res://slides/slide23.tscn" id="22_fmi4j"]
 [ext_resource type="PackedScene" uid="uid://cfnde1wqhybhr" path="res://slides/slide24.tscn" id="23_us81n"]
+[ext_resource type="PackedScene" uid="uid://birgeyuu3aqk7" path="res://slides/slide21.tscn" id="24_dorlg"]
 [ext_resource type="PackedScene" uid="uid://vv7cd1m7dixm" path="res://slides/slide25.tscn" id="24_xd2pj"]
 [ext_resource type="PackedScene" uid="uid://cakakpaipam0c" path="res://slides/slide26.tscn" id="25_8eixf"]
 [ext_resource type="PackedScene" uid="uid://cwqiar0rhror0" path="res://slides/slide27.tscn" id="26_kca7v"]
@@ -94,7 +98,16 @@ layout_mode = 1
 [node name="Slide12" parent="Slides" instance=ExtResource("15_ebwqx")]
 layout_mode = 1
 
+[node name="Slide13" parent="Slides" instance=ExtResource("16_s4sk1")]
+layout_mode = 1
+
+[node name="Slide14" parent="Slides" instance=ExtResource("17_o7v8f")]
+layout_mode = 1
+
 [node name="Slide15" parent="Slides" instance=ExtResource("16_pie66")]
+layout_mode = 1
+
+[node name="Slide16" parent="Slides" instance=ExtResource("19_amaxe")]
 layout_mode = 1
 
 [node name="Slide17" parent="Slides" instance=ExtResource("17_tfrw0")]
@@ -107,6 +120,9 @@ layout_mode = 1
 layout_mode = 1
 
 [node name="Slide20" parent="Slides" instance=ExtResource("20_6vxip")]
+layout_mode = 1
+
+[node name="Slide21" parent="Slides" instance=ExtResource("24_dorlg")]
 layout_mode = 1
 
 [node name="Slide22" parent="Slides" instance=ExtResource("21_yewtl")]

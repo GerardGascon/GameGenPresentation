@@ -1,7 +1,12 @@
-[gd_scene load_steps=6 format=3 uid="uid://mo0iapmdaljl"]
+[gd_scene load_steps=11 format=3 uid="uid://mo0iapmdaljl"]
 
 [ext_resource type="Texture2D" uid="uid://bjj2ca1mm2cq4" path="res://resources/backgrounds/slide29.png" id="1_qs21i"]
 [ext_resource type="Texture2D" uid="uid://dptqbndx848m4" path="res://resources/sprites/remember.png" id="2_6tkkp"]
+[ext_resource type="Texture2D" uid="uid://vhawwpf6v0af" path="res://resources/sprites/foto4.png" id="2_tyxgp"]
+[ext_resource type="Texture2D" uid="uid://c61htps0w1ibt" path="res://resources/sprites/foto2.png" id="3_j1qng"]
+[ext_resource type="Texture2D" uid="uid://bq7iyp1ntxfb" path="res://resources/sprites/captain.png" id="4_xehf7"]
+[ext_resource type="Texture2D" uid="uid://da7v4xpqxk8a1" path="res://resources/sprites/foto1.png" id="5_l5knm"]
+[ext_resource type="Texture2D" uid="uid://dtlyf3ysj2abg" path="res://resources/sprites/foto3.png" id="6_ult5n"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_fuq6m"]
 atlas = ExtResource("2_6tkkp")
@@ -44,6 +49,26 @@ offset_right = 40.0
 offset_bottom = 40.0
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("1_qs21i")
+
+[node name="Foto4" type="Sprite2D" parent="."]
+position = Vector2(444, 186)
+texture = ExtResource("2_tyxgp")
+
+[node name="Foto2" type="Sprite2D" parent="."]
+position = Vector2(623, 153)
+texture = ExtResource("3_j1qng")
+
+[node name="Captain" type="Sprite2D" parent="."]
+position = Vector2(562, 263)
+texture = ExtResource("4_xehf7")
+
+[node name="Foto1" type="Sprite2D" parent="."]
+position = Vector2(471, 343)
+texture = ExtResource("5_l5knm")
+
+[node name="Foto3" type="Sprite2D" parent="."]
+position = Vector2(639, 352)
+texture = ExtResource("6_ult5n")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(583, 453)
