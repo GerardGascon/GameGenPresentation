@@ -1,42 +1,117 @@
-[gd_scene load_steps=4 format=3 uid="uid://6qgjhc5v5aln"]
+[gd_scene load_steps=14 format=3 uid="uid://6qgjhc5v5aln"]
 
-[ext_resource type="FontFile" uid="uid://cq5nu007qrube" path="res://fonts/PixeloidSans-Bold.ttf" id="1_oa3qr"]
+[ext_resource type="Texture2D" uid="uid://bogkqppgdp50o" path="res://resources/backgrounds/slide9.png" id="1_llvlq"]
+[ext_resource type="FontFile" uid="uid://c0i7ilq3dgy1r" path="res://fonts/ReadexPro-SemiBold.ttf" id="2_ft3bv"]
+[ext_resource type="Texture2D" uid="uid://cuaxvrlhl34fm" path="res://resources/sprites/aprender-Sheet.png" id="3_lxdol"]
+[ext_resource type="Texture2D" uid="uid://co08cxvo1ct8i" path="res://resources/sprites/experimentar-Sheet.png" id="4_wkcq5"]
 
 [sub_resource type="Animation" id="Animation_jpvef"]
 resource_local_to_scene = true
 resource_name = "new_animation"
-length = 4.00001
+length = 4.0
 loop_mode = 1
 step = 0.05
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("Experimenting/RichTextLabel4:position")
-tracks/0/interp = 2
+tracks/0/path = NodePath("Learning/RichTextLabel3:position")
+tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.7, 1, 1.7, 2, 2.7, 3, 3.7, 4),
+"times": PackedFloat32Array(0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 3.75),
 "transitions": PackedFloat32Array(0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5),
 "update": 0,
-"values": [Vector2(392, 0), Vector2(392, -36), Vector2(392, -36), Vector2(392, -72), Vector2(392, -72), Vector2(392, -36), Vector2(392, -36), Vector2(392, 0), Vector2(392, 0)]
+"values": [Vector2(261, 15), Vector2(261, 47), Vector2(261, 47), Vector2(261, 15.0002), Vector2(261, 15.0002), Vector2(261, -17), Vector2(261, -17), Vector2(261, 15.0002), Vector2(261, 15.0002)]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("Learning/RichTextLabel3:position")
-tracks/1/interp = 2
+tracks/1/path = NodePath("Experimenting/RichTextLabel4:position")
+tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
-"times": PackedFloat32Array(0, 0.5, 0.65, 1.15, 1.3, 1.85, 2, 2.5, 2.65, 3.15, 3.3, 3.85, 4),
-"transitions": PackedFloat32Array(0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5),
+"times": PackedFloat32Array(0.25, 0.75, 1.25, 1.75, 2.25, 2.75, 3.25, 3.75, 4),
+"transitions": PackedFloat32Array(0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5),
 "update": 0,
-"values": [Vector2(321, 0), Vector2(321, -36), Vector2(321, -36), Vector2(321, -72), Vector2(321, -72), Vector2(321, -108), Vector2(321, -108), Vector2(321, -72), Vector2(321, -72), Vector2(321, -36), Vector2(321, -36), Vector2(321, 0), Vector2(321, 0)]
+"values": [Vector2(314, 5), Vector2(314, -28), Vector2(314, -28), Vector2(314, 5), Vector2(314, 5), Vector2(314, 36), Vector2(314, 36), Vector2(314, 5), Vector2(314, 5)]
+}
+
+[sub_resource type="Animation" id="Animation_61qrk"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Learning/RichTextLabel3:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(261, 15)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Experimenting/RichTextLabel4:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(314, 5)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_awrnl"]
 _data = {
+"RESET": SubResource("Animation_61qrk"),
 "looping": SubResource("Animation_jpvef")
 }
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ma4ou"]
+atlas = ExtResource("3_lxdol")
+region = Rect2(0, 0, 189, 174)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_q6meu"]
+atlas = ExtResource("3_lxdol")
+region = Rect2(189, 0, 189, 174)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_wh1bj"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ma4ou")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_q6meu")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fp5ru"]
+atlas = ExtResource("4_wkcq5")
+region = Rect2(0, 0, 189, 174)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2u4ki"]
+atlas = ExtResource("4_wkcq5")
+region = Rect2(189, 0, 189, 174)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_u2wuf"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fp5ru")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2u4ki")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]
 
 [node name="Slide9" type="Control"]
 layout_mode = 3
@@ -52,18 +127,8 @@ grow_vertical = 2
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 40.0
-
-[node name="RichTextLabel" type="RichTextLabel" parent="."]
-layout_mode = 1
-offset_right = 960.0
-offset_bottom = 46.0
-theme_override_fonts/normal_font = ExtResource("1_oa3qr")
-theme_override_font_sizes/normal_font_size = 36
-bbcode_enabled = true
-text = "Desarrollo - Preparatoria"
-scroll_active = false
-autowrap_mode = 0
-shortcut_keys_enabled = false
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_llvlq")
 
 [node name="Learning" type="Control" parent="."]
 layout_mode = 3
@@ -73,27 +138,18 @@ offset_right = 40.0
 offset_bottom = 186.0
 
 [node name="RichTextLabel3" type="RichTextLabel" parent="Learning"]
-offset_left = 321.0
-offset_right = 1281.0
-offset_bottom = 161.0
-theme_override_fonts/normal_font = ExtResource("1_oa3qr")
-theme_override_font_sizes/normal_font_size = 27
+layout_mode = 0
+offset_left = 261.0
+offset_top = 15.0
+offset_right = 1221.0
+offset_bottom = 176.0
+theme_override_colors/default_color = Color(0.152941, 0.0941176, 0.329412, 1)
+theme_override_fonts/normal_font = ExtResource("2_ft3bv")
+theme_override_font_sizes/normal_font_size = 25
 bbcode_enabled = true
 text = "un motor nuevo
 un estilo nuevo
-trabajo en equipo
 nada"
-scroll_active = false
-autowrap_mode = 0
-shortcut_keys_enabled = false
-
-[node name="RichTextLabel4" type="RichTextLabel" parent="Learning"]
-offset_right = 960.0
-offset_bottom = 84.0
-theme_override_fonts/normal_font = ExtResource("1_oa3qr")
-theme_override_font_sizes/normal_font_size = 27
-bbcode_enabled = true
-text = "Quiero aprender..."
 scroll_active = false
 autowrap_mode = 0
 shortcut_keys_enabled = false
@@ -105,25 +161,15 @@ offset_top = 353.0
 offset_right = 40.0
 offset_bottom = 393.0
 
-[node name="RichTextLabel3" type="RichTextLabel" parent="Experimenting"]
-layout_mode = 1
-offset_right = 960.0
-offset_bottom = 84.0
-theme_override_fonts/normal_font = ExtResource("1_oa3qr")
-theme_override_font_sizes/normal_font_size = 27
-bbcode_enabled = true
-text = "Quiero experimentar..."
-scroll_active = false
-autowrap_mode = 0
-shortcut_keys_enabled = false
-
 [node name="RichTextLabel4" type="RichTextLabel" parent="Experimenting"]
 layout_mode = 1
-offset_left = 392.0
-offset_right = 960.0
-offset_bottom = 197.0
-theme_override_fonts/normal_font = ExtResource("1_oa3qr")
-theme_override_font_sizes/normal_font_size = 27
+offset_left = 314.0
+offset_top = 5.0
+offset_right = 882.0
+offset_bottom = 202.0
+theme_override_colors/default_color = Color(0.152941, 0.0941176, 0.329412, 1)
+theme_override_fonts/normal_font = ExtResource("2_ft3bv")
+theme_override_font_sizes/normal_font_size = 25
 bbcode_enabled = true
 text = "con shaders
 con mecánicas nuevas
@@ -137,3 +183,15 @@ libraries = {
 "": SubResource("AnimationLibrary_awrnl")
 }
 autoplay = "looping"
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(663, 199)
+scale = Vector2(-1, 1)
+sprite_frames = SubResource("SpriteFrames_wh1bj")
+autoplay = "default"
+frame_progress = 0.105353
+
+[node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="."]
+position = Vector2(710, 396)
+sprite_frames = SubResource("SpriteFrames_u2wuf")
+autoplay = "default"

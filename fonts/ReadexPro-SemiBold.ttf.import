@@ -2,13 +2,13 @@
 
 importer="font_data_dynamic"
 type="FontFile"
-uid="uid://cq5nu007qrube"
-path="res://.godot/imported/PixeloidSans-Bold.ttf-824ab30c69d89d64ae839a78c5a5afb7.fontdata"
+uid="uid://c0i7ilq3dgy1r"
+path="res://.godot/imported/ReadexPro-SemiBold.ttf-d735e26fd143dba65533316ec616db0e.fontdata"
 
 [deps]
 
-source_file="res://fonts/PixeloidSans-Bold.ttf"
-dest_files=["res://.godot/imported/PixeloidSans-Bold.ttf-824ab30c69d89d64ae839a78c5a5afb7.fontdata"]
+source_file="res://fonts/ReadexPro-SemiBold.ttf"
+dest_files=["res://.godot/imported/ReadexPro-SemiBold.ttf-d735e26fd143dba65533316ec616db0e.fontdata"]
 
 [params]
 
