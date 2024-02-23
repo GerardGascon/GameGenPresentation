@@ -1,6 +1,57 @@
-[gd_scene load_steps=2 format=3 uid="uid://6qqkmvepn6qj"]
+[gd_scene load_steps=15 format=3 uid="uid://6qqkmvepn6qj"]
 
 [ext_resource type="Texture2D" uid="uid://bwvujo4aeyccy" path="res://resources/backgrounds/slide14.png" id="1_0kj3o"]
+[ext_resource type="Texture2D" uid="uid://b4plem27e33ws" path="res://resources/sprites/linea.png" id="2_0o0sx"]
+[ext_resource type="Texture2D" uid="uid://dcy1wui0hqld2" path="res://resources/sprites/metter1.png" id="3_h3v5j"]
+[ext_resource type="Texture2D" uid="uid://cmtsxwws6dfna" path="res://resources/sprites/metter2.png" id="4_i7nhn"]
+[ext_resource type="Texture2D" uid="uid://c01s8v3jogkk7" path="res://resources/sprites/metter3.png" id="5_tyq37"]
+[ext_resource type="Texture2D" uid="uid://cndwnd11j1qnq" path="res://resources/sprites/caster-Sheet.png" id="6_qeeq7"]
+[ext_resource type="Texture2D" uid="uid://btrpv7odgx42c" path="res://resources/sprites/moonfish.png" id="7_2u8hp"]
+[ext_resource type="FontFile" uid="uid://c0i7ilq3dgy1r" path="res://fonts/ReadexPro-SemiBold.ttf" id="8_64ya6"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ulhsp"]
+atlas = ExtResource("6_qeeq7")
+region = Rect2(0, 0, 312, 178)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fikgn"]
+atlas = ExtResource("6_qeeq7")
+region = Rect2(312, 0, 312, 178)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_rlwin"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ulhsp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fikgn")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hubcf"]
+atlas = ExtResource("7_2u8hp")
+region = Rect2(0, 0, 80, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bnc52"]
+atlas = ExtResource("7_2u8hp")
+region = Rect2(80, 0, 80, 80)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ivhu3"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hubcf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bnc52")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]
 
 [node name="Slide14" type="Control"]
 layout_mode = 3
@@ -18,3 +69,69 @@ offset_right = 40.0
 offset_bottom = 40.0
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("1_0kj3o")
+
+[node name="ValorationRange" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Linea" type="Sprite2D" parent="ValorationRange"]
+position = Vector2(458, 352)
+texture = ExtResource("2_0o0sx")
+
+[node name="Metter1" type="Sprite2D" parent="ValorationRange/Linea"]
+position = Vector2(-2, -5)
+texture = ExtResource("3_h3v5j")
+
+[node name="Metter4" type="Sprite2D" parent="ValorationRange/Linea"]
+position = Vector2(-116, -5)
+texture = ExtResource("4_i7nhn")
+
+[node name="Metter2" type="Sprite2D" parent="ValorationRange/Linea"]
+position = Vector2(118, -7)
+texture = ExtResource("4_i7nhn")
+
+[node name="Metter5" type="Sprite2D" parent="ValorationRange/Linea"]
+position = Vector2(-223, -5)
+texture = ExtResource("5_tyq37")
+
+[node name="Metter3" type="Sprite2D" parent="ValorationRange/Linea"]
+position = Vector2(226, -6)
+texture = ExtResource("5_tyq37")
+
+[node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="ValorationRange"]
+position = Vector2(494, 266)
+sprite_frames = SubResource("SpriteFrames_rlwin")
+autoplay = "default"
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="ValorationRange"]
+position = Vector2(641, 348)
+sprite_frames = SubResource("SpriteFrames_ivhu3")
+autoplay = "default"
+
+[node name="RichTextLabel" type="RichTextLabel" parent="ValorationRange"]
+layout_mode = 0
+offset_left = 217.0
+offset_top = 308.0
+offset_right = 366.0
+offset_bottom = 344.0
+rotation = -0.785398
+theme_override_colors/default_color = Color(0.152941, 0.0941176, 0.329412, 1)
+theme_override_fonts/normal_font = ExtResource("8_64ya6")
+theme_override_font_sizes/normal_font_size = 24
+text = "Abstacto
+"
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="ValorationRange"]
+layout_mode = 0
+offset_left = 670.48
+offset_top = 308.0
+offset_right = 805.035
+offset_bottom = 344.0
+rotation = -0.785398
+theme_override_colors/default_color = Color(0.152941, 0.0941176, 0.329412, 1)
+theme_override_fonts/normal_font = ExtResource("8_64ya6")
+theme_override_font_sizes/normal_font_size = 24
+text = "Concreto
+"

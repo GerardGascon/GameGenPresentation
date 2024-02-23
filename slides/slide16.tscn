@@ -1,6 +1,29 @@
-[gd_scene load_steps=2 format=3 uid="uid://bexxh6hf8syxl"]
+[gd_scene load_steps=6 format=3 uid="uid://bexxh6hf8syxl"]
 
 [ext_resource type="Texture2D" uid="uid://fchpmg3qyd7g" path="res://resources/backgrounds/slide16.png" id="1_r50co"]
+[ext_resource type="Texture2D" uid="uid://dqtbjs7ojx6k5" path="res://resources/sprites/montaña-Sheet.png" id="2_8f8t3"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uotw1"]
+atlas = ExtResource("2_8f8t3")
+region = Rect2(0, 0, 385, 282)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d2118"]
+atlas = ExtResource("2_8f8t3")
+region = Rect2(385, 0, 385, 282)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_3t2df"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uotw1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d2118")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]
 
 [node name="Slide15" type="Control"]
 layout_mode = 3
@@ -18,3 +41,9 @@ offset_right = 40.0
 offset_bottom = 40.0
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("1_r50co")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(680, 273)
+sprite_frames = SubResource("SpriteFrames_3t2df")
+autoplay = "default"
+frame_progress = 0.325627
