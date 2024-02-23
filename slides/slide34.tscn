@@ -209,10 +209,10 @@ texture = ExtResource("1_rt84r")
 [node name="Characters" type="Node2D" parent="."]
 
 [node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="Characters"]
-position = Vector2(375, 349)
+position = Vector2(373, 341)
 sprite_frames = SubResource("SpriteFrames_3knb5")
 autoplay = "default"
-frame_progress = 0.508924
+frame_progress = 0.570443
 
 [node name="AnimatedSprite2D3" type="AnimatedSprite2D" parent="Characters"]
 position = Vector2(564, 325)
