@@ -1,0 +1,48 @@
+[gd_scene load_steps=6 format=3 uid="uid://bj56j31wgnwwe"]
+
+[ext_resource type="Texture2D" uid="uid://bwv5mqbvlduhx" path="res://resources/backgrounds/Fin.png" id="1_bwy8m"]
+[ext_resource type="Texture2D" uid="uid://b65eg5dekswep" path="res://resources/sprites/ideas-Sheet.png" id="2_v4uoc"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ajltw"]
+atlas = ExtResource("2_v4uoc")
+region = Rect2(0, 0, 505, 317)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lkhc5"]
+atlas = ExtResource("2_v4uoc")
+region = Rect2(505, 0, 505, 317)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_pwaos"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ajltw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lkhc5")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]
+
+[node name="Slide42" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -960.0
+offset_bottom = -540.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_bwy8m")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(480, 348)
+sprite_frames = SubResource("SpriteFrames_pwaos")
+autoplay = "default"

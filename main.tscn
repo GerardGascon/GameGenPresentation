@@ -13,7 +13,7 @@
 [ext_resource type="PackedScene" uid="uid://c4vioc2ter4jt" path="res://slides/slide8.tscn" id="11_q8w33"]
 [ext_resource type="PackedScene" uid="uid://6qgjhc5v5aln" path="res://slides/slide9.tscn" id="12_uhmct"]
 [ext_resource type="PackedScene" uid="uid://cqeksbeu5dwvl" path="res://slides/slide10.tscn" id="13_3dihw"]
-[ext_resource type="PackedScene" uid="uid://bj56j31wgnwwe" path="res://slides/slide43.tscn" id="13_bdbr6"]
+[ext_resource type="PackedScene" uid="uid://bj56j31wgnwwe" path="res://slides/slide42.tscn" id="13_bdbr6"]
 [ext_resource type="PackedScene" uid="uid://dacfh32cf32l4" path="res://slides/slide11.tscn" id="14_dyrtr"]
 [ext_resource type="PackedScene" uid="uid://ibjxlfobxsl5" path="res://slides/slide12.tscn" id="15_ebwqx"]
 [ext_resource type="PackedScene" uid="uid://dbye2o0qo0vmm" path="res://slides/slide15.tscn" id="16_pie66"]
