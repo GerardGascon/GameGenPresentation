@@ -1,0 +1,46 @@
+[gd_scene load_steps=4 format=3 uid="uid://vv7cd1m7dixm"]
+
+[ext_resource type="Texture2D" uid="uid://biq7slks35egg" path="res://resources/backgrounds/slide25.png" id="1_xuu6m"]
+[ext_resource type="VideoStream" path="res://resources/videos/olas.ogv" id="2_yaahp"]
+[ext_resource type="VideoStream" path="res://resources/videos/desvanecer.ogv" id="3_tvhae"]
+
+[node name="slide25" type="Control"]
+layout_mode = 3
+anchor_left = 0.962
+anchor_top = 0.856
+anchor_right = 0.962
+anchor_bottom = 0.856
+offset_left = -923.52
+offset_top = -462.24
+offset_right = -923.52
+offset_bottom = -462.24
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_xuu6m")
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="."]
+layout_mode = 0
+offset_left = 480.0
+offset_top = 170.0
+offset_right = 960.0
+offset_bottom = 440.0
+stream = ExtResource("2_yaahp")
+autoplay = true
+expand = true
+loop = true
+
+[node name="VideoStreamPlayer2" type="VideoStreamPlayer" parent="."]
+layout_mode = 0
+offset_top = 170.0
+offset_right = 480.0
+offset_bottom = 440.0
+stream = ExtResource("3_tvhae")
+autoplay = true
+expand = true
+loop = true

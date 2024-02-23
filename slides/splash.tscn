@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://cesv26jximro0"]
 
 [ext_resource type="FontFile" uid="uid://cq5nu007qrube" path="res://fonts/PixeloidSans-Bold.ttf" id="2_32wpu"]
-[ext_resource type="Texture2D" uid="uid://cguemp86u1s0v" path="res://resources/godot_logo.png" id="2_v814v"]
+[ext_resource type="Texture2D" uid="uid://cguemp86u1s0v" path="res://resources/sprites/godot_logo.png" id="2_v814v"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_x5ngj"]
 atlas = ExtResource("2_v814v")

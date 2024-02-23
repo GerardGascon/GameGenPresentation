@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://brjmy5v2kqtrd"]
 
 [ext_resource type="Texture2D" uid="uid://bjjga75576yw7" path="res://resources/backgrounds/Marc1.png" id="1_a0sna"]
-[ext_resource type="Texture2D" uid="uid://rvx3wopuc2tl" path="res://resources/marc-Sheet.png" id="2_lanbf"]
+[ext_resource type="Texture2D" uid="uid://rvx3wopuc2tl" path="res://resources/sprites/marc-Sheet.png" id="2_lanbf"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ogn5q"]
 atlas = ExtResource("2_lanbf")

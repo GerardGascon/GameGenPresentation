@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://djrdg3n1m4c14"]
 
 [ext_resource type="Texture2D" uid="uid://c7e67p0q5sqwt" path="res://resources/backgrounds/Marc2.png" id="1_d8kb8"]
-[ext_resource type="Texture2D" uid="uid://bc5r458fpxr35" path="res://resources/buddies-Sheet.png" id="2_cgj7a"]
+[ext_resource type="Texture2D" uid="uid://bc5r458fpxr35" path="res://resources/sprites/buddies-Sheet.png" id="2_cgj7a"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_v3erj"]
 atlas = ExtResource("2_cgj7a")
