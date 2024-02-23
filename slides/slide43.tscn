@@ -14,7 +14,9 @@ grow_vertical = 2
 
 [node name="TextureRect" type="TextureRect" parent="."]
 layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
+offset_left = -22.0
+offset_top = -25.0
+offset_right = 1987.0
+offset_bottom = 1105.0
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("1_xikki")

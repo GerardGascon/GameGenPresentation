@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=3 uid="uid://ba0xsnum4uwp2"]
+[gd_scene load_steps=43 format=3 uid="uid://ba0xsnum4uwp2"]
 
 [ext_resource type="Script" path="res://Slides.gd" id="1_twp8b"]
 [ext_resource type="PackedScene" uid="uid://edbgev6imyv5" path="res://slides/title.tscn" id="2_cmdxc"]
@@ -24,6 +24,24 @@
 [ext_resource type="PackedScene" uid="uid://bplk0k63nbc33" path="res://slides/slide22.tscn" id="21_yewtl"]
 [ext_resource type="PackedScene" uid="uid://rp3rmym0muwi" path="res://slides/slide23.tscn" id="22_fmi4j"]
 [ext_resource type="PackedScene" uid="uid://cfnde1wqhybhr" path="res://slides/slide24.tscn" id="23_us81n"]
+[ext_resource type="PackedScene" uid="uid://vv7cd1m7dixm" path="res://slides/slide25.tscn" id="24_xd2pj"]
+[ext_resource type="PackedScene" uid="uid://cakakpaipam0c" path="res://slides/slide26.tscn" id="25_8eixf"]
+[ext_resource type="PackedScene" uid="uid://cwqiar0rhror0" path="res://slides/slide27.tscn" id="26_kca7v"]
+[ext_resource type="PackedScene" uid="uid://cej00y45sq8qn" path="res://slides/slide28.tscn" id="27_rdj0d"]
+[ext_resource type="PackedScene" uid="uid://mo0iapmdaljl" path="res://slides/slide29.tscn" id="28_48nlp"]
+[ext_resource type="PackedScene" uid="uid://do854l6ud7d3r" path="res://slides/slide30.tscn" id="29_v6lxh"]
+[ext_resource type="PackedScene" uid="uid://7q3pu8eaqt6t" path="res://slides/slide31.tscn" id="30_r5iwa"]
+[ext_resource type="PackedScene" uid="uid://4avipmf4kmhq" path="res://slides/slide32.tscn" id="31_7uj4o"]
+[ext_resource type="PackedScene" uid="uid://cyyivmj5u5wk" path="res://slides/slide33.tscn" id="32_llp2l"]
+[ext_resource type="PackedScene" uid="uid://updsi6rjil6p" path="res://slides/slide34.tscn" id="33_4l7q2"]
+[ext_resource type="PackedScene" uid="uid://baopai3noeq2o" path="res://slides/slide35.tscn" id="34_xlnaq"]
+[ext_resource type="PackedScene" uid="uid://c1nfxphcwkhn3" path="res://slides/slide36.tscn" id="35_flnum"]
+[ext_resource type="PackedScene" uid="uid://c1epswnsvfd2j" path="res://slides/slide37.tscn" id="36_ef06f"]
+[ext_resource type="PackedScene" uid="uid://cut0ommu2b1p4" path="res://slides/slide38.tscn" id="37_x4yeh"]
+[ext_resource type="PackedScene" uid="uid://3g37e7f6xjfy" path="res://slides/slide39.tscn" id="38_4loge"]
+[ext_resource type="PackedScene" uid="uid://cclomuvgqtu2" path="res://slides/slide40.tscn" id="39_qpau5"]
+[ext_resource type="PackedScene" uid="uid://du40p46k6kbp8" path="res://slides/slide41.tscn" id="40_a1kvy"]
+[ext_resource type="PackedScene" uid="uid://hj02kc0d5jou" path="res://slides/slide43.tscn" id="42_15v82"]
 
 [node name="Main" type="Node"]
 
@@ -100,5 +118,62 @@ layout_mode = 1
 [node name="Slide24" parent="Slides" instance=ExtResource("23_us81n")]
 layout_mode = 1
 
-[node name="Slide43" parent="Slides" instance=ExtResource("13_bdbr6")]
+[node name="slide25" parent="Slides" instance=ExtResource("24_xd2pj")]
+layout_mode = 1
+
+[node name="slide26" parent="Slides" instance=ExtResource("25_8eixf")]
+layout_mode = 1
+
+[node name="slide27" parent="Slides" instance=ExtResource("26_kca7v")]
+layout_mode = 1
+
+[node name="slide28" parent="Slides" instance=ExtResource("27_rdj0d")]
+layout_mode = 1
+
+[node name="slide29" parent="Slides" instance=ExtResource("28_48nlp")]
+layout_mode = 1
+
+[node name="slide30" parent="Slides" instance=ExtResource("29_v6lxh")]
+layout_mode = 1
+
+[node name="slide31" parent="Slides" instance=ExtResource("30_r5iwa")]
+layout_mode = 1
+
+[node name="slide32" parent="Slides" instance=ExtResource("31_7uj4o")]
+layout_mode = 1
+
+[node name="slide33" parent="Slides" instance=ExtResource("32_llp2l")]
+layout_mode = 1
+
+[node name="slide34" parent="Slides" instance=ExtResource("33_4l7q2")]
+layout_mode = 1
+
+[node name="slide35" parent="Slides" instance=ExtResource("34_xlnaq")]
+layout_mode = 1
+
+[node name="slide36" parent="Slides" instance=ExtResource("35_flnum")]
+layout_mode = 1
+
+[node name="slide37" parent="Slides" instance=ExtResource("36_ef06f")]
+layout_mode = 1
+
+[node name="slide38" parent="Slides" instance=ExtResource("37_x4yeh")]
+layout_mode = 1
+
+[node name="slide39" parent="Slides" instance=ExtResource("38_4loge")]
+layout_mode = 1
+
+[node name="slide40" parent="Slides" instance=ExtResource("39_qpau5")]
+layout_mode = 1
+
+[node name="slide41" parent="Slides" instance=ExtResource("40_a1kvy")]
+layout_mode = 1
+
+[node name="Slide42" parent="Slides" instance=ExtResource("13_bdbr6")]
+layout_mode = 1
+
+[node name="Slide43" parent="Slides" instance=ExtResource("42_15v82")]
+layout_mode = 1
+
+[node name="Title2" parent="Slides" instance=ExtResource("2_cmdxc")]
 layout_mode = 1
