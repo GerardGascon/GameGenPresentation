@@ -32,3 +32,4 @@ offset_bottom = 540.0
 stream = ExtResource("2_6f3pm")
 autoplay = true
 expand = true
+loop = true
