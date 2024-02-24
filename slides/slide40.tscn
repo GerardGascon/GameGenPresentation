@@ -1,6 +1,29 @@
-[gd_scene load_steps=2 format=3 uid="uid://cclomuvgqtu2"]
+[gd_scene load_steps=6 format=3 uid="uid://cclomuvgqtu2"]
 
 [ext_resource type="Texture2D" uid="uid://csafdelp4mlxy" path="res://resources/backgrounds/slide40.png" id="1_pmjrr"]
+[ext_resource type="Texture2D" uid="uid://ct4q346efqc2x" path="res://resources/sprites/descansando-Sheet.png" id="2_4ugxt"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ht5kj"]
+atlas = ExtResource("2_4ugxt")
+region = Rect2(0, 0, 407, 260)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ex113"]
+atlas = ExtResource("2_4ugxt")
+region = Rect2(407, 0, 407, 260)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_pn670"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ht5kj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ex113")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]
 
 [node name="slide40" type="Control"]
 layout_mode = 3
@@ -21,3 +44,8 @@ offset_right = 40.0
 offset_bottom = 40.0
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("1_pmjrr")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(480, 360)
+sprite_frames = SubResource("SpriteFrames_pn670")
+autoplay = "default"
