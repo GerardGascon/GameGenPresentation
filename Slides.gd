@@ -17,18 +17,15 @@ func _ready():
 
 
 func _unhandled_input(event: InputEvent):
-	var valid_event: bool = (
-		event.is_action("ui_left") or
-		event.is_action("ui_right")
-	)
+	var valid_event: bool = (event.is_action("forward") or event.is_action("back"))
 	if not valid_event:
 		return
 		
 	disable_current_slide()
 	
-	if event.is_action_pressed('ui_right'):
+	if event.is_action_pressed('forward'):
 		index_active = clamp(index_active + 1, 0, slide_nodes.size() - 1)
-	elif event.is_action_pressed('ui_left'):
+	elif event.is_action_pressed('back'):
 		index_active = clamp(index_active - 1, 0, slide_nodes.size() - 1)
 	
 	enable_slide_index()
