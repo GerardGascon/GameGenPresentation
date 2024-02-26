@@ -1,0 +1,23 @@
+[gd_scene load_steps=2 format=3 uid="uid://h2v1p34c5n5u"]
+
+[ext_resource type="Texture2D" uid="uid://dwnwt6kg8cjcm" path="res://resources/backgrounds/slide36half.png" id="1_gr8dq"]
+
+[node name="slide36half" type="Control"]
+layout_mode = 3
+anchor_left = 0.962
+anchor_top = 0.856
+anchor_right = 0.962
+anchor_bottom = 0.856
+offset_left = -923.52
+offset_top = -462.24
+offset_right = -923.52
+offset_bottom = -462.24
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_gr8dq")

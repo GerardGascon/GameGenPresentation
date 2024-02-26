@@ -1,4 +1,4 @@
-[gd_scene load_steps=47 format=3 uid="uid://ba0xsnum4uwp2"]
+[gd_scene load_steps=48 format=3 uid="uid://ba0xsnum4uwp2"]
 
 [ext_resource type="Script" path="res://Slides.gd" id="1_twp8b"]
 [ext_resource type="PackedScene" uid="uid://edbgev6imyv5" path="res://slides/title.tscn" id="2_cmdxc"]
@@ -45,6 +45,7 @@
 [ext_resource type="PackedScene" uid="uid://3g37e7f6xjfy" path="res://slides/slide39.tscn" id="38_4loge"]
 [ext_resource type="PackedScene" uid="uid://cclomuvgqtu2" path="res://slides/slide40.tscn" id="39_qpau5"]
 [ext_resource type="PackedScene" uid="uid://du40p46k6kbp8" path="res://slides/slide41.tscn" id="40_a1kvy"]
+[ext_resource type="PackedScene" uid="uid://h2v1p34c5n5u" path="res://slides/slide36half.tscn" id="40_iqtkf"]
 [ext_resource type="PackedScene" uid="uid://hj02kc0d5jou" path="res://slides/slide43.tscn" id="42_15v82"]
 
 [node name="Main" type="Node"]
@@ -168,6 +169,9 @@ layout_mode = 1
 layout_mode = 1
 
 [node name="slide36" parent="Slides" instance=ExtResource("35_flnum")]
+layout_mode = 1
+
+[node name="slide36half" parent="Slides" instance=ExtResource("40_iqtkf")]
 layout_mode = 1
 
 [node name="slide37" parent="Slides" instance=ExtResource("36_ef06f")]
